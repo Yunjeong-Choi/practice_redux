@@ -9,7 +9,7 @@ const List = () => {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [colorStorage, setColorStorage] = useState({});
 
-    const handelItemClick = (event,index,selectedItem) => {
+    const handelItemClick = ({event, index, selectedItem }) => {
         setTotalCount(totalCount + 1);
         // INFO: 값을 넘기는 것과 함수를 넘기는 것의 차이 이해 ???
         // setClickCount(clickCount + 1);
